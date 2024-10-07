@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seismic Data Processing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #007ACC;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #007ACC;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007ACC;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seismic Data Processing and AI-based Seismic Event Detection</h1>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#project-structure">Project Structure</a>
+            <a href="#installation">Installation</a>
+            <a href="#usage">Usage</a>
+            <a href="#tools">Tools and Technologies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>This project focuses on processing seismic data from Mars and the Moon to identify seismic events using advanced AI models. By implementing filtering techniques and machine learning, we aim to improve data transmission efficiency and develop scalable solutions for signal processing.</p>
+    </section>
+
+    <section id="project-structure">
+        <h2>Project Structure</h2>
+        <pre>
+📂 seismic-data-processing  
+├── 📁 data                # Raw and preprocessed seismic datasets  
+├── 📁 models              # Machine learning models and architecture  
+├── 📁 scripts             # Python scripts for data processing and model training  
+├── 📁 matlab              # MATLAB files for band-pass and wavelet functions  
+├── index.html             # Project documentation (this file)  
+└── requirements.txt       # Python dependencies  
+        </pre>
+    </section>
+
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>To get started with this project, clone the repository and install the required dependencies.</p>
+        <pre>
+git clone https://github.com/yourusername/seismic-data-processing.git
+cd seismic-data-processing
+pip install -r requirements.txt
+        </pre>
+    </section>
+
+    <section id="usage">
+        <h2>Usage</h2>
+        <p>Follow the instructions below to use the project:</p>
+        <ol>
+            <li><strong>Data Preprocessing:</strong> Run the following command to preprocess the raw seismic data provided by NASA.</li>
+            <pre>python scripts/preprocess_data.py</pre>
+            <li><strong>Signal Processing:</strong> Apply MATLAB functions for band-pass filtering and wavelet transforms.</li>
+            <li><strong>AI Model Training:</strong> Train the Temporal Convolutional Network (TCN) using Keras and TensorFlow.</li>
+            <pre>python scripts/train_tcn_model.py</pre>
+        </ol>
+    </section>
+
+    <section id="tools">
+        <h2>Tools and Technologies</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, MATLAB</li>
+            <li><strong>Libraries:</strong>
+                <ul>
+                    <li>Python: Pandas, Matplotlib, NumPy, Obspy, Keras, TensorFlow</li>
+                    <li>MATLAB: Signal Processing Toolbox</li>
+                </ul>
+            </li>
+            <li><strong>Data Sources:</strong> NASA’s Apollo Passive Seismic Experiment, Space Apps Seismic Detection Data Packet</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name | <a href="mailto:youremail@example.com" style="color: white;">Contact</a></p>
+    </footer>
+</body>
+</html>
+
